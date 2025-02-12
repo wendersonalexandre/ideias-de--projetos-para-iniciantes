@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background: linear-gradient(45deg,#687EFF,#98E4FF,#49108B);
+    height: 100vh;
+    
+}
+h1{
+    text-align: center;
+    margin: 1px 0px 20px 0px;
+    text-decoration:underline 1px;
+    
+}
+
+section{
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 10px rgb(8, 8, 8);
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border: 1px solid black;
+    height: 310px;
+    padding: 20px;
+
+}
+
+
+
+#botao{
+    padding: 3px;
+    border-radius: 4px;
+    margin-left: 60px;
+}
+
+#resultado{
+    background-color: white;
+    color:black;
+    padding: 30px;
+    height: 30px;
+    margin-top: 30px;
+    width: 160px;
+ }
+
+ 
+

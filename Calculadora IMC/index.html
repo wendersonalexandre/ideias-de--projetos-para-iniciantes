@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra seu indíce de masssa corporal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main">
+        <section id="section">
+            <h1>Calculadora IMC</h1>
+            <form action="#">
+
+               <label for="Seunome">Nome:</label>
+               <input type="text" name="Seunome" required id="nome" placeholder="Digite seu nome"> <br> <br>
+
+               <label for="Seupeso">Peso:</label>
+               <input type="number" name="Seupeso" id="peso" step="0.01" placeholder="Digite seu peso"> <br> <br>
+
+               <label for="SuaAltura">Altura:</label>
+               <input type="number" name="SuaAltura" id="altura" step="0.01" placeholder="Altura em centimetros"> <br> <br>
+
+               <button onclick="VerIMc()" id="botao">Ver meu IMC</button>
+
+            </form>
+            <p id="resultado"></p>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
