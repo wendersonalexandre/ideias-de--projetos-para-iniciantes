@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <div  id="corpo-lamp">
+
+            <h1>Lampada</h1>
+            
+                <img src="imagens/desligada (1).jpg" alt="imagem lampad" id="imagem-lampada" >
+
+            <div id="botao">
+                <button id="ligada">Ligar</button>
+                <button id="Desligar">Desligar</button>
+            </div>
+        </div>
+
+    <script>
+         const mudarimg = document.getElementById('imagem-lampada')
+         const acender = document.getElementById('ligada')
+         const apagar = document.getElementById('Desligar')
+         mudarimg.addEventListener('mouseenter', entrar)
+         mudarimg.addEventListener('mouseout',sair)
+            
+        function entrar(){ // FUnção pra quando passar o mouse em cima ligar
+            mudarimg.src = 'imagens/ligada.jpg'
+        }
+        
+        function sair(){ // Função pra quando o ponteiro do mouse sair de cima desligar
+            mudarimg.src = 'imagens/desligada (1).jpg'
+        }
+
+        apagar.addEventListener('click',deslig)
+        acender.addEventListener('click', clicar)
+        mudarimg.addEventListener('dblclick',quebrar)
+
+       function clicar(){  // função para quando apertar no botao ela ligar
+           mudarimg.src = 'imagens/ligada.jpg' 
+       }
+
+
+       function deslig(){ // função parra desligar pelo botao
+        mudarimg.src = 'imagens/desligada (1).jpg'
+       }
+
+       function quebrar(){ // função pra a lampada quebrar se apertar varias vezes
+        mudarimg.src = 'imagens/quebrada.jpg'
+       }
+        
+    </script>
+</body>
+</html>
