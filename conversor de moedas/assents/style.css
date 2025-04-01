@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --Cor1-fundo:#182138;
+    --Cor2-Textos:#4CCC46;
+    --Font:"Kode Mono", monospace;
+}
+
+ /* Fundo escuro */
+/* Fundo escuro */
+body {
+    background-color: #0d0d0d;
+    color: #66ff99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #principal-dv{
+    margin-bottom: 10rem;
+  }
+
+  /* Título no topo */
+  h1 {
+    text-decoration: 1px underline;
+    font-family: var(--Font);
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+    letter-spacing: 3px;
+    
+  }
+  
+  /* Layout principal */
+  #second-dv {
+    font-family: var(--Font);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 90%;
+  }
+  
+  /* Caixa de conversão */
+  #escolher-moedas {
+    background-color: #0a0a0a;
+    border: 1px solid var(--Cor2-Textos);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #escolher-moedas h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    
+  }
+  
+  /* Input */
+  input {
+    font-family: var(--Font);
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid var(--Cor2-Textos);
+    border-radius: 5px;
+    background-color: transparent;
+    color: #66ff99;
+    text-align: center;
+  }
+  
+  input::placeholder {
+    color: #66ff99;
+    opacity: 0.7;
+  }
+
+  #conversao{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .select{
+    padding: 5px;
+    background-color: rgb(107, 224, 107);
+    color: #0a0a0a;
+    border-radius: 5px;
+    font-family: var(--Font);
+  }
+
+ 
+  
+  /* Botão */
+  button {
+    font-family: var(--Font);
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #33cc99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #1e9c6e;
+  }
+  
+  /* Imagem */
+  #img {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #img img {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 10rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 700px) {
+
+    @media (max-width: 700px) {
+
+        #second-dv {
+            flex-direction: column-reverse;
+        }
+        
+        h1 {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    
+        #escolher-moedas {
+            width: 60%;
+            
+        }
+    
+        #img {
+            margin-bottom: 2rem;
+            display: flex;          /* Definir o container da imagem como flex */
+            justify-content: center; /* Alinhar a imagem horizontalmente */
+            align-items: center;    /* Alinhar a imagem verticalmente */
+        }
+    
+        #img img {
+            max-width: 100%;
+            height: auto;
+            margin-left: 0px;
+        }
+    }
+    
+      
+  }

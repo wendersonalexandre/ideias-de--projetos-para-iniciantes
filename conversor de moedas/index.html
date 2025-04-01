@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="assents/style.css">
+    <link rel="shortcut icon" href="assents/dollar_11989322.png" type="image/x-icon">
+</head>
+<body>
+    <div id="principal-dv">
+        <h1>Conversor de Moedas</h1>
+
+        <div id="second-dv">
+           <div id="escolher-moedas">
+                <input type="number" id="inValor" placeholder="Digite o valor">
+
+                <div id="conversao">
+                    <select class="select" id="moedaOrigem"> 
+                        <option value="USD">Dólar (USD)</option>
+                        <option value="BRL">Real (BRL)</option>
+                    </select>
+
+                    <select class="select" id="moedaDestino"> 
+                        <option value="BRL">Real (BRL)</option>
+                        <option value="USD">Dólar (USD)</option>    
+                    </select>
+                </div>
+            
+                <button onclick="converter()">Converter</button>
+                
+                <div id="result">
+                    <h3 id="resultado-op">RESULTADO:</h3>
+                </div>
+           </div>
+
+           <div id="img">
+             <img src="assents/—Pngtree—dollar cash money_8286061.png" alt="imagem-dolar" width="500px">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>   
