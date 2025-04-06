@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treine Tabuada e melhore</title>
+     <link rel="stylesheet" href="assents/styles.css">
+    <link rel="shortcut icon" href="assents/education_school_blocks_building_study_learn_numbers_icon_133453.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="divPrinc">
+
+        <h1>Desafio da tabuada</h1>
+        <h2>Adivinhe o resultado ↓</h2>
+        <output id="out"> </output>
+
+        <Div id="ResultUsuario">
+            <input type="number" id="resposta" placeholder="Digite o resultado aqui" required>
+               <button onclick="comecar()">Iniciar</button> <button onclick="verResultado()">Chute</button>
+        </Div>
+
+        <div id="resultado">
+
+            <p id="errouOuAcertou"></p>
+
+        </div>
+    </div>
+
+    <script>
+        const resultado = document.getElementById('out');
+        const resposta = document.getElementById('resposta');
+        const mensagemDeAcertoOuErro = document.getElementById('errouOuAcertou');
+        let resultadoDaConta = null;
+
+        function comecar(){
+            mensagemDeAcertoOuErro.innerHTML = '';
+            const numeroAleatorio1 = Math.floor(Math.random() * 10) + 1;
+            const numeroAleatio2 = Math.floor(Math.random() * 10) + 1;
+            resultadoDaConta = numeroAleatorio1 * numeroAleatio2 ;
+
+            resultado.innerHTML = ''
+            resultado.innerHTML = `${numeroAleatorio1} x ${numeroAleatio2} = ?`;
+        }
+        
+        function verResultado(){
+            const exibirMensagem = parseInt(resposta.value);
+
+             if (exibirMensagem === resultadoDaConta) {
+                mensagemDeAcertoOuErro.style.color = 'green';
+                mensagemDeAcertoOuErro.innerHTML = ' ✅ Parabéns!! você acertou! ';
+                resposta.value = '';
+            } else {
+                mensagemDeAcertoOuErro.style.color = 'red';
+                mensagemDeAcertoOuErro.innerHTML = '💀 Você errou! Tente novamente.';
+                resposta.value = '';
+            } 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+    font-family: "Patrick Hand", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    letter-spacing: 1px;
+}
+
+#divPrinc {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    transition: all 0.3s ease-in-out;
+}
+
+#divPrinc:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+#out {
+    padding: 10px;
+    font-size: 20px;
+    color: #007bff;
+    background-color: #f9f9f9;
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: inline-block;
+    min-width: 150px;
+}
+
+#resposta {
+    padding: 10px;
+    font-size: 18px;
+    color: #007bff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#errouOuAcertou {
+    margin-top: 1rem;
+    font-size: 22px;
+    font-weight: bold;
+    min-height: 30px;
+}
