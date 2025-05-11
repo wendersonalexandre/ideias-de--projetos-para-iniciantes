@@ -10,7 +10,7 @@ Este repositório contém projetos simples desenvolvidos com o objetivo de prati
 
 Calculadora simples com operações básicas como soma, subtração, multiplicação e divisão.
 
-![Calculadora](./Imagens%20projetos/calculadora.png)
+![Calculadora](./ideias-de--projetos-para-iniciantes/Imagens%20projetos/calculadora.png)
 
 ### 2. 💱 Conversor de Moedas
 
